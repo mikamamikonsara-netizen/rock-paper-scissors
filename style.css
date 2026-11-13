@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #101014;
+    color: #f2e9ed;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+#player {
+    width: min(900px, 100%);
+    padding: 45px;
+    background: #19171d;
+    border: 1px solid #51404e;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(220, 70, 140, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+h1 {
+    color: #e879ad;
+    font-size: clamp(25px, 5vw, 48px);
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(232, 121, 173, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+.score-board {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#forChoosen {
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 25px;
+    border: 1px solid #554451;
+    border-radius: 15px;
+    background: #211e25;
+    margin-top: 20px;
+}
+
+.you,
+.computer {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    background: #302733;
+    border-radius: 15px;
+}
+
+#player .choose {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #b85d8a;
+    border-radius: 15px;
+    background: #2b222e;
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player .choose:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: #58314c;
+    box-shadow: 0 0 25px rgba(232, 121, 173, 0.35);
+}
+
+#player .choose:active {
+    transform: scale(0.92);
+}
+
+#player .choose:focus-visible {
+    outline: 2px solid #f49ac4;
+    outline-offset: 5px;
+}
+
